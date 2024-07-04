@@ -1,10 +1,10 @@
 <div class="w-full h-screen flex flex-col bg-orange-300 items-center p-36">
   <h1 class="font-bold text-6xl text-center">Uber Clone</h1>
-  <p class="text-lg">This is the landing page for Uber App</p>
+  <p class="text-lg mt-4">This is the landing page for Uber App</p>
 
   <div class="flex gap-4 mt-8 ">
-    <%= link_to 'Customer Sign Up', "#", class:"bg-green-500 text-2xl rounded-lg p-2" %>
-    <%= link_to 'Driver Sign Up', "#", class:"bg-blue-500 text-2xl rounded-lg p-2" %>
+    <%= link_to 'Customer Sign Up', new_customer_registration_path, class:"bg-green-500 text-2xl rounded-lg p-2" %>
+    <%= link_to 'Driver Sign Up', new_driver_registration_path, class:"bg-blue-500 text-2xl rounded-lg p-2" %>
   </div>
 
 </div>
