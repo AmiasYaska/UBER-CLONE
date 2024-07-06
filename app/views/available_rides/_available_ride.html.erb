@@ -1,4 +1,5 @@
 <div class="bg-gray-200 p-2 rounded-md">
     <p>Ride from <%= ride.pickup_location%> to <%= ride.destination%> </p>
     <p>From <%= ride.customer.email%> </p>
+    <%= link_to 'Accept trip', "#", class:"bg-blue-500 p-2 rounded-md text-gray-50" %>
 </div>  
