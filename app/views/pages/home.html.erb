@@ -11,7 +11,12 @@
       <% end %>
 
     <% else %>
-      <%= link_to 'View Available Rides', available_rides_path, class:"p-2 bg-blue-500 rounded-md mt-4" %>
+      <% if current_driver.active_ride %>
+        <p class="text-2xl p-4">You're driving <%= current_driver.active_ride.customer.email%> from <%= current_driver.active_ride.pickup_location%> to <%= current_driver.active_ride.destination%>  </p>
+      <% else %>
+        <%= link_to 'View Available Rides', available_rides_path, class:"p-2 bg-blue-500 rounded-md mt-4" %>
+      <% end %>
+      
     <% end %>
     
   <% else %>
