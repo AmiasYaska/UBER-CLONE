@@ -5,9 +5,8 @@
   <% if current_customer || current_driver %>
     <% if current_customer %>
       <% if current_customer.active_ride %>
-        <p class="text-2xl">Your ride to <%=current_customer.active_ride.destination %> is scheduled </p>
+        <p class="text-2xl p-4">Your ride to <%=current_customer.active_ride.destination %> is scheduled </p>
       <% else %>
-
         <%= link_to 'Request new ride', new_ride_path, class:"p-2 bg-blue-500 rounded-md mt-4" %>
       <% end %>
 
